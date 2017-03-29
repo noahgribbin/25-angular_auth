@@ -16,15 +16,18 @@ header {
   background-color: $brand-primary;
   color: $white;
 }
+
 h2{
   font-size: 125%;
   margin-top: $gutter / 2;
   margin-left: $gutterP / 2;
 }
+
 button{
   background-color: $brand-primary;
   color: $white;
 }
+
 .btn-std {
   background-color: $brand-primary;
   color: $white;
@@ -32,22 +35,24 @@ button{
   float: right;
   margin-left: 0;
   margin-right: $gutterP / 2;
-
+  padding: 0;
+  height: 40px;
 }
 
 input{
-  width:40%;
+  width:90%;
   margin-left: $gutterP / 2;
-  margin-right: 55%;
+  margin-right: $gutterP / 2;
   margin-top: $gutter;
   height: 30px;
   border-radius: 3px;
   transition: 350ms;
+  padding: 10px;
 }
 
 input:focus {
     margin-right: $gutterP / 2;
     border: 3px solid #555;
-    width: 90%;
+    // width: 90%;
     outline: 0;
 }
