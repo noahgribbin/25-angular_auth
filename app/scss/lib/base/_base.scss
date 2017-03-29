@@ -1,0 +1,53 @@
+$brand-primary: #444;
+$brand-secondary: #888;
+$black: #000;
+$white: #fff;
+$grey: #ccc;
+$gutter: 30px;
+$gutterP: 10%;
+
+body {
+  background-color: $grey;
+  color: $brand-primary;
+  width: 100%;
+}
+
+header {
+  background-color: $brand-primary;
+  color: $white;
+}
+h2{
+  font-size: 125%;
+  margin-top: $gutter / 2;
+  margin-left: $gutterP / 2;
+}
+button{
+  background-color: $brand-primary;
+  color: $white;
+}
+.btn-std {
+  background-color: $brand-primary;
+  color: $white;
+  width: 25%;
+  float: right;
+  margin-left: 0;
+  margin-right: $gutterP / 2;
+
+}
+
+input{
+  width:40%;
+  margin-left: $gutterP / 2;
+  margin-right: 55%;
+  margin-top: $gutter;
+  height: 30px;
+  border-radius: 3px;
+  transition: 350ms;
+}
+
+input:focus {
+    margin-right: $gutterP / 2;
+    border: 3px solid #555;
+    width: 90%;
+    outline: 0;
+}

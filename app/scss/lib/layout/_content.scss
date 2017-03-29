@@ -1,0 +1,14 @@
+.signin-login-wrapper {
+  clear: both;
+  float: right;
+  margin-right: $gutterP / 2;
+  p{
+    display: inline-block;
+  }
+  a{
+    display: inline-block;
+    text-decoration: none;
+    color: $brand-primary;
+    font-weight: bold;
+  }
+}
