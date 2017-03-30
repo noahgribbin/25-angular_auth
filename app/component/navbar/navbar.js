@@ -4,12 +4,12 @@ require('./_navbar.scss');
 
 module.exports = {
   template: require('./navbar.html'),
-  conroller: ['$log', '$location', '$rootScope', 'authService', NavbarConroller],
-  conrollerAs: 'navbarCtrl'
+  controller: ['$log', '$location', '$rootScope', 'authService', NavbarController],
+  controllerAs: 'navbarCtrl'
 };
 
-function NavbarConroller($log, $location, $rootScope, authService) {
-  $log.debug('NavbarConroller');
+function NavbarController($log, $location, $rootScope, authService) {
+  $log.debug('NavbarController');
 
   this.checkPath = function() {
     let path = $location.path();
@@ -28,11 +28,11 @@ function NavbarConroller($log, $location, $rootScope, authService) {
 
   this.checkPath();
 
-  $rootScope.$on('locationChangeSuccess', () => {
+  $rootScope.$on('$locationChangeSuccess', () => {
     this.checkPath();
   });
 
-  this.logout =  function() {
+  this.logout = function() {
     $log.debug('navbarCtrl.logout');
     this.hideButtons = true;
     authService.logout()

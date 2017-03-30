@@ -1,5 +1,7 @@
 'use strict';
 
+require('./_create-gallery.scss')
+
 module.exports = {
   template: require('./create-gallery.html'),
   controller: ['$log', 'galleryService', CreateGalleryController],
@@ -8,7 +10,6 @@ module.exports = {
 
 function CreateGalleryController($log, galleryService) {
   $log.debug('CreateGalleryController');
-
   this.gallery = {};
 
   this.createGallery = function() {
