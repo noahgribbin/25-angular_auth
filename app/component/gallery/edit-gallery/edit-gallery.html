@@ -9,10 +9,8 @@
              class="input-std"
              type="text"
              ng-model="editGalleryCtrl.gallery.name">
-             <!-- {{ editGalleryCtrl.gallery.name }} -->
-             <!-- this is not a good test, but the format you should use if you arent sure what something is -->
     </fieldset>
-    <fieldset>
+    <fieldset class="fieldset-last-child-fix">
       <span class="item-label">description:</span>
       <input name="desc"
              class="input-std"
@@ -20,7 +18,6 @@
              ng-model="editGalleryCtrl.gallery.description">
     </fieldset>
 
-    <input type="submit" value="update">
-    <!-- type button? -->
+    <button class="btn-std update-btn" type="submit" value="update">update</button>
   </form>
 </section>

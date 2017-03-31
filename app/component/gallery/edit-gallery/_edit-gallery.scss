@@ -1,0 +1,37 @@
+$brand-primary: #444;
+$brand-secondary: #888;
+$black: #000;
+$white: #fff;
+$grey: #ccc;
+$gutter: 30px;
+$gutterP: 10%;
+
+.edit-gallery {
+  background:$brand-secondary;
+  padding-top: $gutter / 2;
+  padding-bottom: $gutter / 2;
+  border-radius: 5px;
+  fieldset {
+    margin-bottom: $gutter / 2;
+  }
+  .fieldset-last-child-fix {
+    margin-bottom: 0;  }
+  span{
+    display: inline-block;
+  }
+  input{
+    display: inline-block;
+    margin-top: 0;
+    width: 70%;
+    float: right;
+  }
+}
+
+.update-btn{
+  height: 30px;
+  width: 25%;
+  border-radius: 5px;
+  outline: 0;
+  border-style: none;
+  margin-top: $gutter * 1.5;
+}

@@ -10,21 +10,25 @@ $gutterP: 10%;
   ul{
     clear: both;
     li{
+      // can move everything from li down into gallery-item .scss
       padding-top: 10px;
       padding-bottom: 10px;
-      background: $brand-secondary;
+      // background: $brand-secondary;
       width: 90%;
       margin: $gutterP /2;
       border-radius: 5px;
       // color:
       span{
-        display: block;
-        margin-bottom: $gutter;
+        // display: block;
+        // margin-bottom: $gutter;
+        // margin-right: $gutter;
         margin-left: $gutter;
-        margin-right: $gutter;
+        font-weight: bold;
       }
       span:last-child {
         margin-bottom: 0;
+        margin-left: 0;
+        font-weight: normal;
       }
     }
   }

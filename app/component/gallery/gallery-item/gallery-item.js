@@ -15,7 +15,8 @@ module.exports = {
 function GalleryItemController($log, galleryService) {
   $log.debug('GalleryItemController');
 
-  this.showEditGallery= false;
+  this.showEditGallery = false;
+  this.hideEditButtons = false;
 
   this.deleteGallery = function() {
     galleryService.deleteGallery(this.gallery._id);

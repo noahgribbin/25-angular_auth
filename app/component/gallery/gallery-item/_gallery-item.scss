@@ -1,0 +1,35 @@
+$brand-primary: #444;
+$brand-secondary: #888;
+$black: #000;
+$white: #fff;
+$grey: #ccc;
+$gutter: 30px;
+
+.gallery-item {
+  .current-item {
+    background-color: $brand-secondary;
+    padding-top: $gutter / 2;
+    padding-bottom: $gutter / 2;
+    border-radius: 5px;
+    div{
+      margin-bottom: $gutter / 2;
+      height: 35px;
+    }
+    div:last-child {
+      margin-bottom: 0;
+
+    }
+  }
+
+  .gallery-button{
+    border-radius: 5px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: $gutter;
+    margin-left: 0;
+  }
+  .gallery-button:last-child{
+    background: $brand-secondary;
+  }
+}
