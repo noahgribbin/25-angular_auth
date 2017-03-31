@@ -8,7 +8,6 @@ module.exports = {
   controllerAs: 'galleryItemCtrl',
   bindings: {
     gallery: '<'
-    // log this shit
   }
 };
 
