@@ -1,0 +1,26 @@
+$brand-primary: #444;
+$brand-secondary: #888;
+$black: #000;
+$white: #fff;
+$grey: #ccc;
+$gutter: 30px;
+$gutterP: 10%;
+
+
+.thumbnail{
+  div{
+  }
+  img{
+    // width: 100%;
+    // margin-left: $gutterP / 2;
+    // margin-right: $gutterP / 2;
+    clear: both;
+    float: right;
+    text-align: center;
+  }
+  span{
+    clear: both;
+    float: right;
+    line-height: 40px;
+  }
+}

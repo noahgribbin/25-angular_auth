@@ -1,0 +1,35 @@
+$brand-primary: #444;
+$brand-secondary: #888;
+$black: #000;
+$white: #fff;
+$grey: #ccc;
+$gutter: 30px;
+$gutterP: 10%;
+
+.upload-pic{
+  .grab-img{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    float: right;
+    margin-right: $gutter;
+    text-decoration: underline;
+  }
+  h3{
+    text-decoration: underline;
+  }
+  input{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: $brand-secondary;
+    color: $white;
+    padding-left: 10px;
+    padding-right: -10px;
+  }
+  button{
+    display: inline-block;
+    // clear: both;
+    float:right;
+  }
+}
