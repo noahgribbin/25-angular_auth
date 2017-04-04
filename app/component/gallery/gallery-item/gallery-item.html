@@ -17,14 +17,15 @@
   </edit-gallery>
 
   <span class="btn-std gallery-button"
-        ng-click="galleryItemCtrl.showEditGallery = !galleryItemCtrl.showEditGallery;
-                 galleryItemCtrl.hideEditButton = !galleryItemCtrl.hideEditButton"
+        ng-click="galleryItemCtrl.showEditGallery = !galleryItemCtrl.showEditGallery"
+        ng-hide="galleryItemCtrl.showEditGallery"
         ng-if="!galleryItemCtrl.hideEditButtons">
     edit
   </span>
   <span
    class="btn-std gallery-button"
    ng-click="galleryItemCtrl.deleteGallery()"
+   ng-hide="galleryItemCtrl.showEditGallery"
    ng-if="!galleryItemCtrl.hideEditButtons">
    delete
    </span>
