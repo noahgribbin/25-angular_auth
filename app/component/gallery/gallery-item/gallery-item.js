@@ -18,6 +18,7 @@ function GalleryItemController($log, galleryService) {
   this.hideEditButtons = false;
 
   this.deleteGallery = function() {
+    $log.debug('galleryItemCtrl.deleteGallery');
     galleryService.deleteGallery(this.gallery._id);
 
   };
