@@ -24,7 +24,7 @@ function routerConfig($stateProvider, $urlRouterProvider) {
       controllerAs: 'landingCtrl'
     }
   ];
-
+  
   states.forEach( state => {
     $stateProvider.state(state);
   });
