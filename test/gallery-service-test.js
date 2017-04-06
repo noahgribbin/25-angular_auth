@@ -67,7 +67,8 @@ describe('Gallery Service', function() {
 
   describe('galleryService.deleteGallery', () => {
     it('should delete a gallery', () => {
-      let galleryID = 'testid'
+      let galleryID = 'testid';
+      
       let headers = {
         Authorization: 'Bearer test token',
         Accept: 'application/json, text/plain, */*'

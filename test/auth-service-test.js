@@ -7,7 +7,6 @@ describe('Auth Service', function() {
       this.$window = $window;
       this.$rootScope = $rootScope;
       this.authService = authService;
-      this.$httpBackend = $httpBackend;
     });
   });
   describe('authService.getToken', () => {
