@@ -1,8 +1,10 @@
 <section class="home">
   <create-gallery></create-gallery>
 
+  <input ng-model="homeCtrl.gallerySearchTerm" type="text" placeholder="text">
+
   <ul>
-    <gallery-item ng-repeat="item in homeCtrl.galleries"
+    <gallery-item ng-repeat="item in homeCtrl.galleries | gallerySearch: homeCtrl.gallerySearchTerm"
                   gallery="item"
                   delete-done="homeCtrl.galleryDeleteDone(galleryData)"
                   ng-click="homeCtrl.currentGallery = item">

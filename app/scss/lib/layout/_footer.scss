@@ -1,0 +1,32 @@
+.twitter {
+  background: url('../assets/spritesheet.png') no-repeat -5px -63px;
+  width: 48px;
+  height: 48px;
+}
+.fb{
+  background: url('../assets/spritesheet.png') no-repeat -63px -63px;
+  width: 48px;
+  height: 48px;
+}
+.linkedin{
+  background: url('../assets/spritesheet.png') no-repeat -63px -5px;
+  width: 48px;
+  height: 48px;
+}
+.social-icon{
+  display: inline-block;
+
+}
+footer{
+  height: 150px;
+  background: grey;
+  margin-top: 30px;
+  clear: both;
+}
+.social-nav{
+  ul{
+    line-height: 174px;
+    height: 150px;
+    text-align: center;
+  }
+}
