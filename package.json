@@ -4,6 +4,8 @@
   "description": "![cf](https://i.imgur.com/7v5ASc8.png) Lab 25 - Client Side Auth\r ======",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
+    "heroku-postbuild": "webpack -p --progress",
     "build": "./node_modules/webpack/bin/webpack.js",
     "build-watch": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot",
     "test": "./node_modules/karma/bin/karma --single-run",
